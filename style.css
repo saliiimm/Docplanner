@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "roboto";
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "work-sans";
+    src: url(./fonts/Work_Sans/WorkSans-Light.ttf);
+}
+
+
+body {
+    margin: 0;
+}
+::selection {
+    color:white;
+    background:#00bfa5;
+  }
+
+
+/*nav-css*/
+.logo img {
+    width: 268px;
+    height: 32px;
+    padding-bottom: 8.9px;
+    padding-top: 6.8px;
+    padding-left: 0.6px;
+}
+
+nav {
+    width: calc(100vw - 560.5px);
+    height:70px ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    opacity: 98%;
+    background-color: white;
+    padding-top: 1.5px;
+    padding: 0 270px;
+    z-index: 2;
+}
+
+.item li {
+    display: inline;
+}
+.item  a {
+    color: #ababab;
+    text-decoration: none;
+    padding: 0 0.7em;
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: 400;
+}
+#about a {
+    color: #00bfa5;
+}
+
+.item a:hover {
+    color: #00bfa5;
+}
+
+.item>ul {
+    padding-bottom: 15px;
+}
+
+
+/*department select*/
+nav ul li{
+    float: left;
+    position: relative;
+}
+nav ul ul{
+    position:absolute;
+    padding: 0%;
+    width: 250px;
+    display: none;
+    top: 100%; 
+    background-color: white;
+    box-shadow:0px 8PX 16px 0px rgba(0,0,0,0.2);
+}
+nav ul li:hover >ul {
+    display: block;
+}
+.dropbox a{
+    display: block;
+    width: 235px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.dropbox a:hover{
+    background-color: #dff9f7;
+}
+
+
+
+/*css-home*/
+.home {
+    padding: 100px;
+    text-align: center;
+    padding-top: 103px;
+}
+.p  {
+    display: inline-block;
+    height: auto;
+    font-size:16px;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #747474;
+    text-align: start;
+    font-family:'roboto',arial ,sans-serif; 
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.home h1{
+    font-family: 'work-sans',arial ,sans-serif;
+    font-weight: 300;
+    font-size: 2.125rem;
+    letter-spacing:-.3px ;
+    color: #00bfa5;
+    padding-top: 3px;
+}
+
+
+
+
+/*soins*/
+
+.patient {
+      background-color: #00b39b;
+}
+.doctor {
+      background-color: #3d83df;
+}
+.clinic {
+    background-color: #1b2734;
+}
+.soins {
+    width: 1015px;
+    height: 365px;
+    margin-left:262px ;
+    margin-bottom:40px ;
+    margin-top: 0;
+    display: flex;
+}
+
+.patient,.doctor,.clinic{
+    height: 345px; 
+    width:311px ;
+    border-radius: 3%; 
+    margin: 10px;
+    color: white;
+    text-align: start;
+
+}
+.soins img {
+    height: 24px;
+    width: 24px;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+.soins h1 {
+    font-size: 25px;
+    height: 18px;
+    line-height: 25px;
+    font-family: 'work-sans',arial ,sans-serif;
+    margin-top: 5px;
+    letter-spacing: 1px;
+
+}
+.soins h2 {
+    font-size: 26;
+    font-family: 'work-sans',arial ,sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    line-height: 28.8px;
+}
+
+.text{
+    height:158px ;
+    width:247px ;
+    margin-left:32px;
+    }
+/*select*/
+.select  {
+    width:auto ;
+    margin-left:28px;
+    border: none;
+    line-height: 24.96px;
+    background-color:transparent;
+    font-size: 19.2px;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    .select2{
+        width:auto ;
+        margin-left:28px;
+        border: none;
+        line-height: 24.96px;
+        background-color:transparent;
+        font-size: 19.2px;
+        text-transform: none;
+        text-decoration: underline;
+        cursor: pointer;
+    
+    }
+    .select-container{
+        margin-bottom: 40px;
+    }
+    select{
+        color: white;
+    }
+    option{
+        color: black;
+        font-size:15PX ;
+        
+    }
+    select:focus {
+       outline: none;
+      }
+
+/*under-soins*/
+.under-soins {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 270px;
+    padding-bottom: 30px;
+}
+
+
+.under-soins ul {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    list-style: none;
+    align-items: center;
+    align-content: space-between;
+    margin-left: 55px;
+}
+
+.under-soins h1 {
+    font-size: 1.625rem;
+    font-family:  'work-sans',arial ,sans-serif;
+    color: #00b39b;
+    font-weight: 300;
+    width: 20%;
+}
+.under-soins li {
+    color: #747474;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+.under-soins svg {
+    fill: #747474;
+}
+
+
+.under-soins img {
+    filter: grayscale(200%);
+    filter: contrast(2%);
+}
+
+.under-soins img:hover, .under-soins svg:hover {
+    fill: #00b39b;
+    filter: none;
+
+}
+.patient:hover,.doctor:hover,.clinic:hover{
+    opacity: 89%;
+}
+
+
+
+
+
+/*stat*/
+.stat {
+    background-color: #dff9f7;
+    height: 600px;
+}
+.header h1 {
+    color: #00bfa5;
+    font-size: 34px;
+    line-height: 44.2px;
+    font-family: 'work-sans',arial ,sans-serif; 
+    text-align: start;
+    font-weight: 300;
+    letter-spacing: -0.3;
+    text-align: start;
+    margin: 0;
+}
+
+.header p  {
+    text-align: start;
+    font-size: 14px;
+    color: #8a8a8a;
+    font-family: 'roboto',arial ,sans-serif;
+    margin-top: 22px;
+      }
+
+.header {
+    margin-top: 84px;
+    margin-left: 270px;
+}
+.header img {
+    width: 460px;
+    height: 320px;
+    margin-left:-170px;
+    margin-top: 36px;
+}
+.boxs{
+    display:flex;
+    margin-left: 100px;
+    margin-right: 200px;
+ }
+ .box{
+    height:250PX ;
+    width:228PX ;
+    background-color: white;
+    border-radius: 2%;
+    text-align: center;
+    font-family: 'work sans',arial ,sans-serif;
+    margin: 20px;
+    margin-left: 0;
+ }
+ 
+ .box-logo1{
+    height:40px ;
+    width:35px ;
+    padding: 11px 82px 0 82px;
+ }
+ .box-logo2,.box-logo4{
+    height:40px ;
+    width:40px ;
+   
+ }
+ .box-logo3{
+    height:32px ;
+    width:40px ;
+ }
+ .in1{
+   padding-top: 24px;
+ }
+ .in2{
+    padding: 56px 30px 0 30px;
+ }
+ .boxs h3{
+    font-size: 24px;
+    color: #00bfa5;
+ }
+ .boxs p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #747474;
+ }
+ .colonne-1{
+    margin-top: 30px;
+ }
+
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/*cities*/
+.cities {
+    padding-top: 60px;
+}
+
+.header-2 {
+    display: inline;
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.header-2 h1 {
+    color: #00b39b;
+    font-family: 'work-sans',Arial,sans-serif;
+    font-size: 30px;
+    letter-spacing: -0.3px;
+    line-height: 39px;
+    vertical-align: baseline;
+    
+}
+.header-2 p {
+    color: #747474;
+    font-family: 'roboto',arial ,sans-serif; 
+    font-size: 14px;
+    letter-spacing: normal;
+    margin-top: 22px;
+    line-height: 24px;
+}
+
+
+.grid-content {
+    display: grid;
+   grid-template-columns: repeat(3,311px);
+   grid-template-rows: repeat(3,300px);
+   grid-row-gap: 70px;
+   grid-column-gap: 22px;
+   justify-content: center;
+   padding-top: 67px;
+}
+.grid-content img {
+    width: 311px;
+    height: 280px;
+    border-radius: 2% 2% 0 0;
+}
+.grid {
+    border-radius: 2%;
+    height: 350px;
+}
+.grid:hover {
+    box-shadow:0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+.grid  button {
+    background-color: #3d83df;
+    border: none;
+    height: 28.5px;
+    width:103px ;
+    border-radius: 3px;
+    color: white;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.4px;
+ }
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-top: 15px;
+    color: grey;
+    font-size: large;
+    font-family: 'roboto',Arial,sans-serif;
+}
+
+
+
+
+/*join-us*/
+.join-us {
+    padding-top: 100px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.join-us h1 {
+    color: #333333;
+    font-size: 30px;
+    font-family: 'work-sans',Arial,sans-serif;
+}
+
+.join-us button {
+    background-color: #3d83df;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    font-family: 'roboto',Arial,sans-serif;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 223px;
+}
+
+
+
+
+/*footer*/
+footer {
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    background-color: white;
+    color: #ababab;
+    font-family: 'roboto',Arial,sans-serif;
+    padding-top: 110px;
+    
+}
+footer p {
+    padding-bottom: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color:  #3d83df;
+}
+footer a:hover{
+    text-decoration:underline  #3d83df ;}
